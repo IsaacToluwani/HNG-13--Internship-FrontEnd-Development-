@@ -18,8 +18,38 @@ body{
 
 article {
   height: 80%;
-  width: 300px;
+  width: 400px;
   background: white;
   border-radius: 10px;
   border: 10px solid #E0E0E0;
+  padding: 20px;
+  
+  display: flex;
+  flex-direction: column ;
+  justify-content: space-between;
+  align-items: center;
+}
+
+figure{
+  height:50%;
+  width: 100%;
+  overflow: hidden;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+header {
+  font-size: 34px;
+font-weight: 700;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+  padding: 10px 0;
 }
