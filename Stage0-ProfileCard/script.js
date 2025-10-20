@@ -1,6 +1,6 @@
 // Function to update the current UTC time
 function updateUTCTime() {
-  const currentTimeElement = document.querySelector('[data-testid="currentTimeUTC"]');
+  const currentTimeElement = document.querySelector('[data-testid="test-user-time"]');
   const now = new Date();
   const utcTime = now.toUTCString();
   currentTimeElement.textContent = `${utcTime}`;
