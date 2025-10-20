@@ -13,10 +13,11 @@
   <body>
     <article data-testid="test-profile-card" class="profile-card">
       <figure>
-        <img src="./photo_2024-03-21_16-04-39.jpg" alt="avatar" />
+        <img src="./photo_2024-03-21_16-04-39.jpg" alt="avatar" data-testid="test-user-avatar"/>
+        <figcaption>Avaatar</figcaption>
       </figure>
       <header data-testid="test-user-name">Isaac Toluwani</header>
-      <p data-testid="test-user-name">
+      <p data-testid="test-user-bio">
         Focused on FrontEnd Software Engineering, I am skilled in UI Designs,
         custom code for Web Applications and WordPress for Individuals and
         Businessed
@@ -25,8 +26,17 @@
       <nav>
         <ul></ul>
       </nav>
-      <section class="hooby"></section>
-      <div class="sm-link" data-testid="socialLinks">
+      <section class="abt-me" data-testid="about-me-section">
+        <div class="hobby"></div>
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Reading</li>
+          <li>Coding</li>
+          <li>Traveling</li>
+        </ul>
+        
+      </section>
+      <div class="sm-link" data-testid="test-user-social-links">
         <a href="https://www.linkedin.com/in/isaac-toluwani"
           ><i class="fa-brands fa-linkedin-in"></i
         ></a>
@@ -37,7 +47,7 @@
           ><i class="fa-brands fa-github"></i
         ></a>
       </div>
-      <p class="utc-time" data-testid="currentTimeUTC"></p>
+      <p class="utc-time" data-testid="test-user-time"></p>
     </article>
     <script src="./script.js"></script>
   </body>

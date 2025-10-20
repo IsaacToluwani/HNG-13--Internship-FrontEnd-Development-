@@ -34,7 +34,8 @@ figure{
   height:50%;
   width: 100%;
   overflow: hidden;
-  border-radius: 100px;
+  border-radius:50%;
+
 }
 
 figure img {
