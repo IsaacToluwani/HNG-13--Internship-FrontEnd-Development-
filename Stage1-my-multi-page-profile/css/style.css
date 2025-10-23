@@ -148,21 +148,8 @@ header {
 
 /* ABOUT US STYLES */
 /* GENERAL RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: "Merriweather", serif;
-  background-color: #f7f8fa;
-  color: #152a55;
-  line-height: 1.6;
-  padding: 1rem;
-}
 
-/* ABOUT PAGE CONTAINER */
 main[data-testid="test-about-page"] {
   max-width: 800px;
   margin: 2rem auto;
@@ -172,7 +159,7 @@ main[data-testid="test-about-page"] {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
-/* HEADINGS */
+
 main[data-testid="test-about-page"] h2 {
   font-family: "Montserrat", sans-serif;
   color: #fe3648;
