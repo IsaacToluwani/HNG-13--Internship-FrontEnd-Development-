@@ -159,7 +159,7 @@ form {
   padding: 20px;
   border-radius: 10px;
   border: 10px solid #e0e0e0;
-} 
+}
 
 form label {
   display: block;
@@ -175,4 +175,49 @@ textarea {
   border-radius: 0.5rem;
   font-size: 1rem;
   transition: border-color 0.3s ease;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+
+input:focus,
+textarea:focus {
+  border-color: #fe3648;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(254, 54, 72, 0.2);
+}
+
+
+button[data-testid="test-contact-submit"] {
+  padding: 10px 15px;
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  border: 2px solid red;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[data-testid="test-contact-submit"]:hover,
+button[data-testid="test-contact-submit"]:focus {
+  background-color: white;
+  color: red;
+  outline: none;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+  form[data-testid="test-contact-form"] {
+    padding: 1.5rem;
+  }
+
+  input,
+  textarea,
+  button {
+    font-size: 0.95rem;
+  }
 }
