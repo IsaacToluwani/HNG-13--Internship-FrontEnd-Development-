@@ -147,6 +147,80 @@ header {
 }
 
 /* ABOUT US STYLES */
+/* GENERAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  background-color: #f7f8fa;
+  color: #152a55;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* ABOUT PAGE CONTAINER */
+main[data-testid="test-about-page"] {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADINGS */
+main[data-testid="test-about-page"] h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #fe3648;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* SECTION SPACING */
+main[data-testid="test-about-page"] section {
+  margin-bottom: 2rem;
+}
+
+/* TEXT */
+main[data-testid="test-about-page"] p {
+  font-size: 1rem;
+  color: #333;
+  background: #f1f3f6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+main[data-testid="test-about-page"] p:hover {
+  background-color: #e6ebf2;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  main[data-testid="test-about-page"] {
+    padding: 1.2rem;
+  }
+
+  main[data-testid="test-about-page"] h2 {
+    font-size: 1.3rem;
+  }
+
+  main[data-testid="test-about-page"] p {
+    font-size: 0.95rem;
+  }
+}
+
+/* ACCESSIBILITY FOCUS STYLES */
+section:focus-within {
+  outline: 3px solid #6882a1;
+  border-radius: 0.75rem;
+  transition: outline 0.2s ease;
+}
+
 
 /* FORM/CONTACT US STYLES */
 form {
