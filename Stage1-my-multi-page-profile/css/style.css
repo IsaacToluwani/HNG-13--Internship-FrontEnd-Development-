@@ -1,5 +1,7 @@
 @import url(https://db.onlinewebfonts.com/c/12e32253f0e25760bf6938c3b941ab8f?family=Tarocco+OT+W01+Bold);
 
+/* GLOBAL STYLES */
+
 * {
   margin: 0;
   padding: 0;
@@ -15,8 +17,23 @@ body {
   background: orange;
 }
 
+.about-me, .contact-me {
+  padding: 10px 15px;
+  margin-top: 50px;
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  border: 2px solid red;
+}
+
+.about-me:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+
 article {
-  height: 80%;
+  height: 85%;
   width: 400px;
   background: white;
   border-radius: 10px;
@@ -30,16 +47,17 @@ article {
 }
 
 figure {
-  height: 50%;
+  height: 40%;
   width: 100%;
   overflow: hidden;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 figure img {
   width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 header {
